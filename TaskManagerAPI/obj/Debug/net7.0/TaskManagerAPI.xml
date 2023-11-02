@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TaskManagerAPI</name>
+    </assembly>
+    <members>
+        <member name="M:UsersCRUDAPI.Controllers.TaskController.GetTasks">
+            <summary>
+            Получение всех задач
+            </summary>
+        </member>
+        <member name="M:UsersCRUDAPI.Controllers.TaskController.GetTask(System.Int32)">
+            <summary>
+            Получение задачи и ее тегов по ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UsersCRUDAPI.Controllers.TaskController.AddTagToTask(System.Int32,System.String)">
+            <summary>
+            Добавление тега задаче
+            </summary>
+            <param name="id"></param>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UsersCRUDAPI.Controllers.TaskController.AddTask(TaskManagerAPI.DTO.TaskDTO)">
+            <summary>
+            Добавление задачи
+            </summary>
+            <param name="task"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UsersCRUDAPI.Controllers.TaskController.DeleteTask(System.Int32)">
+            <summary>
+            Удаление задачи по ID
+            </summary>
+            <param name="taskId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TaskManagerAPI.Controllers.TagController.GetTages">
+            <summary>
+            Получение всех тегов
+            </summary>
+        </member>
+        <member name="M:TaskManagerAPI.Controllers.TagController.GetTag(System.Int32)">
+            <summary>
+            Получение тега и всех его задач по ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TaskManagerAPI.Controllers.TagController.AddTag(TaskManagerAPI.DTO.TagDTO)">
+            <summary>
+            Добавление тега
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TaskManagerAPI.Controllers.TagController.DeleteTag(System.Int32)">
+            <summary>
+            Удаление тега по ID
+            </summary>
+            <param name="tagId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TaskManagerAPI.Migrations.Init">
+            <inheritdoc />
+        </member>
+        <member name="M:TaskManagerAPI.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TaskManagerAPI.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TaskManagerAPI.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
